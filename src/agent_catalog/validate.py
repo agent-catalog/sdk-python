@@ -10,8 +10,7 @@ from typing import Any
 import jsonschema
 from jsonschema import Draft202012Validator
 
-REPO_ROOT = Path(__file__).resolve().parents[4]
-SCHEMA_PATH = REPO_ROOT / "spec" / "schema" / "agent-catalog-v1.schema.json"
+SCHEMA_PATH = Path(__file__).resolve().parent / "schema" / "agent-catalog-v1.schema.json"
 
 
 @dataclass
